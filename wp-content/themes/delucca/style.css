@@ -38,7 +38,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	9.1 Setup
 	9.X Reusable
 	9.X Fallbacks
-	9.X Generals
+	9.X General
 	9.X Queries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -420,6 +420,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: #222;
   background-color: #ccc;
 }
 
@@ -461,6 +462,51 @@ ul {
 9.X Reusable
 ------------------------------*/
 
+.simple-link:link,
+.simple-link:visited {
+	color: #00aeef;
+	text-decoration: none;
+}
+
+.simple-link:hover,
+.simple-link:active {
+	color: #222;
+}
+
+/*------------------------------
+9.X General
+------------------------------*/
+
+#index,
+#archive,
+#post,
+#single-page,
+.error-404 {
+	padding: 5% 0 3%;
+	background-color: #fff;
+}
+
+.page-header {
+	padding: 0 0 3%;
+	border-bottom: 1px solid #00aeef;
+  margin: 0 0 4%;
+  text-align: center;
+}
+
+.error-404 .page-title {
+	color: #00aeef;
+	font-size: 4em;
+}
+
+.page-title span {
+	color: #00aeef;
+}
+
+.page-content {
+	font-size: 0.9em;
+}
+
+
 /*------------------------------
 9.X Fallbacks
 ------------------------------*/
@@ -468,3 +514,35 @@ ul {
 /*------------------------------
 9.X Queries
 ------------------------------*/
+
+@media (max-width: 990px) {
+	
+}
+
+@media (max-width: 768px) {
+	
+	/* General */
+	
+	#index,
+	#archive,
+	#post,
+	#single-page,
+	.error-404 {
+		padding: 7% 0 5%;
+	}
+	
+	.error-404 .page-title {
+		font-size: 2.8em;
+	}
+	
+}
+
+@media (max-width: 460px) {
+	
+	/* Setup */
+	
+	body {
+		font-size: 12px;
+	}
+	
+}
