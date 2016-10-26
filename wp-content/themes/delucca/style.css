@@ -493,11 +493,6 @@ ul {
   text-align: center;
 }
 
-.error-404 .page-title {
-	color: #00aeef;
-	font-size: 4em;
-}
-
 .page-title span {
 	color: #00aeef;
 }
@@ -510,6 +505,208 @@ ul {
 /*------------------------------
 9.X Fallbacks
 ------------------------------*/
+
+.error-404 .page-title {
+	color: #00aeef;
+	font-size: 4em;
+}
+
+/*------------------------------
+9.X Header
+------------------------------*/
+
+#header {
+	overflow: hidden;
+}
+
+.header-wrapper {
+	padding: 1% 0;
+	position: static;
+	z-index: 9999;
+	background-color: #a7a9ac;
+}
+
+.logo-box,
+.main-nav {
+	float: left;
+}
+
+.logo-box {
+	display: inline-block;
+	width: 20%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.logo-box img {
+	display: block;
+	width: 180px;
+	height: auto;
+	padding: 10px 0 0;
+	margin: 0 auto;
+}
+
+.main-nav {
+	width: 80%;
+	text-align: right;
+}
+
+.nav-links li {
+	display: inline-block;
+	margin: 0 4% 0 0;
+}
+
+.nav-links li:last-child {
+	margin-right: 0;
+}
+
+.nav-links a:link,
+.nav-links a:visited,
+.nav-links a:hover,
+.nav-links a:active {
+	display: inline-block;
+	padding: 10px 0 15px;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+	background-color: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-links a:before {
+	content: "";
+	display: block;	
+	width: 10%;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	opacity: 0;
+	z-index: -9;
+	background-color: #00aeef;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+}
+
+.nav-links a:hover:before,
+.nav-links a:active:before {
+	width: 100%;
+	opacity: 1;
+}
+
+/* Mobile btn */
+
+.mobile-btn-box {
+	display: none;
+	position: fixed;
+	top: 50px;
+	right: 20px;
+	z-index: 99999;
+}
+
+.nav-btn {
+	display: block;
+	width: 40px;
+	height: auto;
+	padding: 5px;
+	border: 0;
+	margin: 0;
+	background-color: transparent;
+	box-shadow: none;
+	position: relative;
+}
+
+.nav-btn:focus {
+	outline: none;
+}
+
+.nav-btn span {
+	display: block;
+	width: 90%;
+	height: 3px;
+	margin: 0 auto 5px;
+	border-radius: 3px;
+	position: relative;
+	top: 0;
+	opacity: 1;
+	background-color: #777;
+	-webkit-transform: none;
+	transform: none;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-btn span:last-child {
+	margin: 0 auto;
+}
+
+.nav-btn.active span {
+	background-color: #fff;
+}
+
+.nav-btn.active span:first-child {
+	top: 11px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.nav-btn.active span:last-child {
+	top: -5px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.nav-btn.active span:nth-child(2) {
+	opacity: 0;
+}
+
+/*------------------------------
+9.X Footer
+------------------------------*/
+
+#footer {
+	padding: 1% 0;
+	background-color: #a7a9ac;
+	color: #fff;
+}
+
+.copy {
+	display: inline-block;
+	margin: 13px 0 0;
+	font-size: 0.9em;
+}
+
+.social-menu {
+	width: 30%;
+	float: right;
+	text-align: right;
+}
+
+.social-menu li {
+ display: inline-block;
+ margin: 0 2% 0 0;
+}
+
+.social-menu li:last-child {
+	margin-right: 0;
+}
+
+.social-menu li a:link,
+.social-menu li a:visited {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.social-menu li a:hover,
+.social-menu li a:active {
+	color: #222;
+}
 
 /*------------------------------
 9.X Queries
@@ -535,6 +732,60 @@ ul {
 		font-size: 2.8em;
 	}
 	
+	/* Header */
+	
+	.mobile-btn-box {
+		display: block;
+	}
+	
+	.header-wrapper {
+		width: 100%;
+		padding: 100px 0 0;
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		opacity: 0;
+		background-color: rgba(0,174,239,0.95);
+		-webkit-transition: 0.3s ease-out;
+		transition: 0.3s ease-out;
+	}
+	
+	.header-wrapper.active {
+		left: 0;
+		opacity: 1;
+		-webkit-transition: 0.3s ease-out;
+		transition: 0.3s ease-out;
+	}
+	
+	.logo-box,
+	.main-nav {
+    float: none;
+	}
+	
+	.logo-box {
+    width: 100%;
+    display: block;
+    padding: 0 0 2.5%;
+    border-bottom: 1px dotted #fff;
+    margin: 0 0 2.5%;
+	}
+	
+	.main-nav {
+    width: 100%;
+    text-align: center;
+	}
+	
+	.nav-links li {
+    display: block;
+    margin: 0 0 2%;
+	}
+	
+	.nav-links a:before {
+		background-color: #222;
+	}
+	
 }
 
 @media (max-width: 460px) {
@@ -543,6 +794,16 @@ ul {
 	
 	body {
 		font-size: 12px;
+	}
+	
+	/* Footer */
+	
+	.social-menu {
+		width: 50%;
+	}
+	
+	.social-menu li {
+	 margin: 0 5% 0 0;
 	}
 	
 }

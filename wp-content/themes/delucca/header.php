@@ -40,6 +40,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	
-	
+	<div id="page" class="site">
+		<header id="header">
+			<div class="header-wrapper">
+				<div class="container clearfix">
+					<div class="logo-box">
+						<a href="<?php echo esc_html(home_url("/")); ?>" title="Home"><img src="<?php bloginfo("stylesheet_directory"); ?>/assets/img/logo/logo-delucca-completo-white.png" alt="Agência Delucca"></a>
+					</div>
+					<?php
+						// Site main menu 
+						$header_menu_args = array(
+							"theme_location"	=> "header",
+							"menu_class"	=> "nav-links",
+							"container"	=> "nav",
+							"container_class"	=> "main-nav"
+						);
+						wp_nav_menu( $header_menu_args );
+					?>
+				</div>
+			</div>
+			<div class="mobile-btn-box">
+				<button id="js-mobile-btn" class="nav-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
