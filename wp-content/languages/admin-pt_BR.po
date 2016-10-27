@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.6.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-10-21 02:17:37+0000\n"
+"PO-Revision-Date: 2016-10-26 20:21:25+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1823,7 +1823,7 @@ msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Escrita\" target=\"_b
 
 #: wp-admin/edit-form-advanced.php:396
 msgid "<a href=\"https://codex.wordpress.org/Pages_Add_New_Screen\" target=\"_blank\">Documentation on Adding New Pages</a>"
-msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Páginas-Adicionar_Nova\" target=\"_blank\">Documentação sobre Adicionar Novas Páginas</a>"
+msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Páginas-Adicionar_Nova\" target=\"_blank\">Documentação sobre adicionar novas páginas</a>"
 
 #: wp-admin/edit.php:245
 msgid "<a href=\"https://codex.wordpress.org/Pages_Screen\" target=\"_blank\">Documentation on Managing Pages</a>"
@@ -1919,7 +1919,7 @@ msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Mídia\" target=\"_bl
 
 #: wp-admin/options-general.php:45
 msgid "<a href=\"https://codex.wordpress.org/Settings_General_Screen\" target=\"_blank\">Documentation on General Settings</a>"
-msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Geral\" target=\"_blank\">Documentação sobre Configurações Gerais</a>"
+msgstr "<a href=\"https://codex.wordpress.org/pt-br:Painel_Geral\" target=\"_blank\">Documentação sobre configurações gerais</a>"
 
 #: wp-admin/export.php:54
 msgid "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\" target=\"_blank\">Documentation on Export</a>"
@@ -2268,7 +2268,7 @@ msgstr "d-m-Y H:i:s"
 
 #: wp-admin/tools.php:46
 msgid "Install Press This"
-msgstr "Instalar o Publique isso"
+msgstr "Instalar o \"Publique isso\""
 
 #: wp-admin/tools.php:47
 msgid "Bookmarklet"
@@ -3249,11 +3249,11 @@ msgstr "Atualização disponível"
 #: wp-admin/themes.php:158
 msgctxt "Add new theme"
 msgid "Add New"
-msgstr "Adicionar Novo"
+msgstr "Adicionar novo"
 
 #: wp-admin/theme-install.php:46 wp-admin/themes.php:138
 msgid "Add New Theme"
-msgstr "Adicionar Novo Tema"
+msgstr "Adicionar novo tema"
 
 #: wp-admin/themes.php:134
 msgid ""
@@ -3993,7 +3993,7 @@ msgstr "Codec de áudio:"
 
 #: wp-admin/includes/media.php:2929
 msgid "Audio Format:"
-msgstr "Formato de Áudio:"
+msgstr "Formato de áudio:"
 
 #: wp-admin/includes/media.php:346
 msgid "Genre: %s."
@@ -4624,7 +4624,7 @@ msgstr "As categorias têm hierarquia, o que significa que você pode aninhar su
 
 #: wp-admin/custom-header.php:120
 msgid "For most themes, the header text is your Site Title and Tagline, as defined in the <a href=\"%1$s\">General Settings</a> section."
-msgstr "Na maioria dos temas, o texto do cabeçalho é o Título do Site e a Descrição, definidos na tela <a href=\"%1$s\">Configurações gerais</a>."
+msgstr "Na maioria dos temas, o texto do cabeçalho é o título do site e a descrição, definidos na tela <a href=\"%1$s\">Configurações gerais</a>."
 
 #: wp-admin/custom-header.php:112
 msgid "If your theme has more than one default header image, or you have uploaded more than one custom header image, you have the option of having WordPress display a randomly different image on each page of your site. Click the &#8220;Random&#8221; radio button next to the Uploaded Images or Default Images section to enable this feature."
@@ -5653,7 +5653,7 @@ msgstr "URL de Anexo de Post"
 #: wp-admin/menu.php:63
 msgctxt "admin menu"
 msgid "All Links"
-msgstr "Todos os Links"
+msgstr "Todos os links"
 
 #: wp-admin/includes/media.php:1918
 msgid "Drop files here"
@@ -5793,7 +5793,7 @@ msgstr "Atributos"
 
 #: wp-admin/menu.php:221
 msgid "All Users"
-msgstr "Todos os Usuários"
+msgstr "Todos os usuários"
 
 #: wp-admin/includes/class-wp-links-list-table.php:84
 #: wp-admin/includes/class-wp-links-list-table.php:330
@@ -5815,7 +5815,7 @@ msgstr "Excluir"
 #: wp-admin/users.php:487
 msgctxt "user"
 msgid "Add New"
-msgstr "Adicionar Novo"
+msgstr "Adicionar novo"
 
 #: wp-admin/comment.php:50 wp-admin/custom-background.php:99
 #: wp-admin/custom-header.php:126 wp-admin/edit-comments.php:164
@@ -5916,7 +5916,7 @@ msgstr "Editor"
 #: wp-admin/menu.php:233 wp-admin/menu.php:235 wp-admin/user-new.php:165
 #: wp-admin/user-new.php:370 wp-admin/user-new.php:485
 msgid "Add New User"
-msgstr "Adicionar novo Usuário"
+msgstr "Adicionar novo usuário"
 
 #: wp-admin/comment.php:149 wp-admin/plugins.php:290 wp-admin/plugins.php:296
 #: wp-admin/theme-editor.php:272
@@ -6012,7 +6012,7 @@ msgstr "Imagens de Destaque"
 #: wp-admin/includes/class-wp-press-this.php:826
 #: wp-admin/includes/meta-boxes.php:376 wp-admin/includes/theme.php:261
 msgid "Post Formats"
-msgstr "Formatos de Post"
+msgstr "Formatos de post"
 
 #: wp-admin/includes/theme.php:259
 msgid "Full Width Template"
@@ -6116,7 +6116,7 @@ msgstr "O WordPress é criado por uma <a href=\"%1$s\">equipe mundial</a> de pes
 
 #: wp-admin/menu.php:86
 msgid "All Comments"
-msgstr "Todos os Comentários"
+msgstr "Todos os comentários"
 
 #: wp-admin/credits.php:117
 msgid "Core Contributors to WordPress %s"
@@ -6244,7 +6244,7 @@ msgstr "Adicionar Existente"
 
 #: wp-admin/options-writing.php:83
 msgid "Default Post Format"
-msgstr "Formato padrão de Post"
+msgstr "Formato padrão de post"
 
 #: wp-admin/user-new.php:275
 msgctxt "user"
@@ -6258,7 +6258,7 @@ msgstr "Quaisquer edições em arquivos nesta tela serão refletidas em todos os
 #: wp-admin/user-new.php:273
 msgctxt "user"
 msgid "Add New User"
-msgstr "Adicionar Novo Usuário"
+msgstr "Adicionar novo usuário"
 
 #: wp-admin/plugin-editor.php:137
 msgid "If you want to make changes but don&#8217;t want them to be overwritten when the plugin is updated, you may be ready to think about writing your own plugin. For information on how to edit plugins, write your own from scratch, or just better understand their anatomy, check out the links below."
@@ -6618,7 +6618,7 @@ msgstr "Senha de FTP"
 
 #: wp-admin/widgets.php:68
 msgid "Many themes show some sidebar widgets by default until you edit your sidebars, but they are not automatically displayed in your sidebar management tool. After you make your first widget change, you can re-add the default widgets by adding them from the Available Widgets area."
-msgstr "Muitos temas mostram alguns widgets de barra lateral por padrão até que você edite suas barras laterais, mas eles não são exibidos automaticamente em sua ferramenta de gerenciamento de barra lateral. Depois que você alterar o seu primeiro widget, você pode adicionar novamente os widgets padrão a partir da área Widgets disponíveis."
+msgstr "Muitos temas mostram alguns widgets de barra lateral por padrão até que você edite suas barras laterais, mas eles não são exibidos automaticamente em sua ferramenta de gerenciamento de barra lateral. Depois que você alterar o seu primeiro widget, você pode adicionar novamente os widgets padrão a partir da área widgets disponíveis."
 
 #: wp-admin/options-permalink.php:30
 msgid "If you pick an option other than Plain, your general URL path with structure tags (terms surrounded by <code>%</code>) will also appear in the custom structure field and your path can be further modified there."
@@ -8099,11 +8099,11 @@ msgstr "Editar plugins"
 
 #: wp-admin/options.php:247
 msgid "All Settings"
-msgstr "Todas as configurações"
+msgstr "Todas configurações"
 
 #: wp-admin/options-writing.php:38 wp-admin/options-writing.php:167
 msgid "Update Services"
-msgstr "Serviços de Atualização"
+msgstr "Serviços de atualização"
 
 #: wp-admin/options-writing.php:146
 msgid "Default Mail Category"
@@ -8111,7 +8111,7 @@ msgstr "Categoria de e-mail padrão"
 
 #: wp-admin/options-writing.php:136
 msgid "Login Name"
-msgstr "Nome do Usuário"
+msgstr "Nome do usuário"
 
 #: wp-admin/options-writing.php:131
 msgid "Port"
@@ -8253,7 +8253,7 @@ msgstr "A estrutura de permalinks foi atualizada. Remova a permissão de escrita
 
 #: wp-admin/options-permalink.php:15 wp-admin/options-permalink.php:28
 msgid "Permalink Settings"
-msgstr "Configuração de Links Permanentes"
+msgstr "Configurações de links permanentes"
 
 #: wp-admin/options-media.php:126
 msgid "Organize my uploads into month- and year-based folders"
@@ -8301,7 +8301,7 @@ msgstr "Recortar a miniatura nas dimensões exatas (normalmente as miniaturas s�
 
 #: wp-admin/options-media.php:53
 msgid "Thumbnail size"
-msgstr "Tamanho da Miniatura"
+msgstr "Tamanho da miniatura"
 
 #: wp-admin/options-media.php:48
 msgid "Image sizes"
@@ -8349,7 +8349,7 @@ msgstr "Este endereço é utilizado apenas para fins administrativos, tais como 
 
 #: wp-admin/options-general.php:18
 msgid "General Settings"
-msgstr "Configurações Gerais"
+msgstr "Configurações gerais"
 
 #: wp-admin/options-discussion.php:228
 msgid "MonsterID (Generated)"
@@ -8377,7 +8377,7 @@ msgstr "Para usuários sem um avatar próprio personalizado, você pode ou exibi
 
 #: wp-admin/options-discussion.php:216 wp-admin/options-discussion.php:217
 msgid "Default Avatar"
-msgstr "Avatar Padrão"
+msgstr "Avatar padrão"
 
 #. translators: Content suitability rating:
 #. https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
@@ -8405,7 +8405,7 @@ msgstr "G &#8212; Adequado para todas as idades"
 
 #: wp-admin/options-discussion.php:193 wp-admin/options-discussion.php:194
 msgid "Maximum Rating"
-msgstr "Classificação Máxima"
+msgstr "Classificação máxima"
 
 #: wp-admin/options-discussion.php:188
 msgid "Show Avatars"
@@ -8425,7 +8425,7 @@ msgstr "Quando um comentário contiver qualquer uma destas palavras em seu conte
 
 #: wp-admin/options-discussion.php:161 wp-admin/options-discussion.php:162
 msgid "Comment Blacklist"
-msgstr "Lista Negra de Comentários"
+msgstr "Lista negra de comentários"
 
 #: wp-admin/options-discussion.php:154
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
@@ -8437,7 +8437,7 @@ msgstr "Reter um comentário na fila se este contiver %s ou mais links. (Uma car
 
 #: wp-admin/options-discussion.php:150 wp-admin/options-discussion.php:151
 msgid "Comment Moderation"
-msgstr "Moderação de Comentários"
+msgstr "Moderação de comentários"
 
 #: wp-admin/options-discussion.php:146
 msgid "Comment author must have a previously approved comment"
@@ -8535,7 +8535,7 @@ msgstr "O suporte a Multisites não está ativado."
 
 #: wp-admin/menu.php:254
 msgid "Permalinks"
-msgstr "Links Permanentes"
+msgstr "Links permanentes"
 
 #: wp-admin/menu.php:251
 msgid "Reading"
@@ -8566,7 +8566,7 @@ msgstr "Perfil"
 #: wp-admin/menu.php:208 wp-admin/plugins.php:482
 msgctxt "plugin"
 msgid "Add New"
-msgstr "Adicionar Novo"
+msgstr "Adicionar novo"
 
 #: wp-admin/menu.php:156
 msgid "Appearance"
@@ -8581,7 +8581,7 @@ msgstr "Comentários %s"
 #: wp-admin/upload.php:225
 msgctxt "file"
 msgid "Add New"
-msgstr "Adicionar Nova"
+msgstr "Adicionar nova"
 
 #: wp-admin/menu.php:50
 msgid "Library"
@@ -9087,7 +9087,7 @@ msgstr "Só mais um site WordPress"
 
 #: wp-admin/includes/post.php:1329
 msgid "Change Permalinks"
-msgstr "Alterar Links Permanentes"
+msgstr "Alterar links permanentes"
 
 #: wp-admin/includes/post.php:1318 wp-admin/includes/post.php:1341
 msgid "Permalink:"
@@ -9512,7 +9512,7 @@ msgstr "Filtro &raquo;"
 
 #: wp-admin/includes/media.php:2410
 msgid "All Types"
-msgstr "Todos os Tipos"
+msgstr "Todos os tipos"
 
 #: wp-admin/includes/media.php:2326
 msgid "Update gallery settings"
@@ -9564,12 +9564,12 @@ msgstr "Organizar:"
 
 #: wp-admin/includes/media.php:2222
 msgid "All Tabs:"
-msgstr "Todas as Abas:"
+msgstr "Todas as abas:"
 
 #: wp-admin/includes/media.php:2036 wp-admin/includes/media.php:2247
 #: wp-admin/includes/media.php:2514
 msgid "Save all changes"
-msgstr "Salvar todas as mudanças"
+msgstr "Salvar todas alterações"
 
 #: wp-admin/includes/media.php:2009
 msgid "Add media files from your computer"

@@ -17,11 +17,8 @@ $home_banner_text = get_field("home-banner-text");
 $home_content_img = get_field("home-content-img");
 
 // Contato
-$home_contact_img = get_field("home-contact-img");
-$home_contact_text = get_field("home-contact-text");
-
-// linear-gradient(rgba(0,174,239,0.5), rgba(0,174,239,0.5)),
-
+$contact_img = get_field("home-contact-img");
+$contact_text = get_field("home-contact-text");
 
 get_header(); ?>
 
@@ -39,19 +36,41 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', "how_work" ); ?>
 				</div>
 			</section>
-			<section id="home-posts">
+			<section id="blog">
 				<div class="container">
 					<?php get_template_part( 'template-parts/content', "blog" ); ?>
 				</div>
 			</section>
-			<section id="home-content">
-				<div class="container">
+			<section id="home-content" class="clearfix">
+				<div class="content-img-box hidden-xs">
+					<img src="<?php echo $home_content_img["url"]; ?>" alt="<?php echo $home_content_img["alt"]; ?>">
+				</div>
+				<div class="content-content-box">
 					<?php
 					while ( have_posts() ) : the_post();
 						the_content();
 					endwhile; // End of the loop.
 					?>
 				</div>
+			</section>
+			<section id="home-contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="home-contact-img-box">
+								<img src="<?php echo $contact_img["url"]; ?>" alt="<?php echo $contact_img["alt"]; ?>">
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="home-contact-content-box">
+								<?php echo $contact_text; ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="clients">
+				<?php get_template_part( 'template-parts/content', "clients" ); ?>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

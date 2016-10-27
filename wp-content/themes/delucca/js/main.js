@@ -44,17 +44,23 @@ $(document).ready(function() {
       mobileBtn.css("top", "20px");
     }
   }
-  // Call the function
+  // Call function
   mobileBtnClear();
   
-  // Get current year
+  /*--------------------------------
+  // Footer date
+  --------------------------------*/
+  
   function currentDate() {
     var date = new Date();
     $("#js-date").html(date.getFullYear());
   }
   currentDate();
   
-  // Parallax Efect
+  /*--------------------------------
+  // Parallax Effect
+  --------------------------------*/
+  
   $('.parallax').each(function(){
   	var $obj = $(this);
   	$(window).scroll(function() {
@@ -62,6 +68,53 @@ $(document).ready(function() {
   		var bgpos = '50% '+ yPos + 'px';
   		$obj.css('background-position', bgpos );
   	}); 
+  });
+  
+  /*--------------------------------
+  // Posts filter engine
+  --------------------------------*/
+  
+  $("li[data-filter]").click(function() {
+    // Get value of the clicked li item, and use it to target the posts
+    var itemFilter = $(this).attr("data-filter");
+    
+    // Hide & Show content.
+    $(".post-link").css("opacity", "0");
+    setTimeout(function(){
+      $(".post-wrapper").hide();
+      $(".post-wrapper[data-category='"+itemFilter+"']").show();
+    }, 300);
+    $(".post-wrapper[data-category='"+itemFilter+"'] .post-link").animate({ opacity: 1, }, 500 );
+    
+  });
+  // Show all posts
+  $(".show-all").click(function() {
+    $(".post-wrapper").show();
+    $(".post-link").animate({ opacity: 1, }, 500 );
+  });
+  
+  // Change color of the li item on hover and when it is clicked
+  function toggleFeedbackClass() {
+    var item = $(".cat-filter li");
+    item.click(function() {
+      item.not(this).removeClass("active");
+      $(this).addClass("active");
+    });
+  }
+  // Call function
+  toggleFeedbackClass();
+  
+  /*--------------------------------
+  // Clietes Slider
+  --------------------------------*/
+  
+  $(".client-slider").bxSlider({
+    pager: false,
+    slideWidth: 150,
+    minSlides: 3,
+    maxSlides: 5,
+    moveSlides: 1,
+    slideMargin: 30
   });
   
 });
