@@ -1,6 +1,6 @@
 ====================
 Version: 1.0.0
-Release: 
+Release: 28/10/2016
 ====================
 Agência Delucca
 Site Portfólio, construído para WordPress.
