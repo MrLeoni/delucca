@@ -24,7 +24,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area home">
 		<main id="main" class="site-main" role="main">
-			<section id="home-banner" class="parallax" data-speed="10" style="background: url(<?php echo $thumb_url[0]; ?>) no-repeat center 0">
+			<section id="home-banner" class="parallax" data-speed="8" style="background: url(<?php echo $thumb_url[0]; ?>) no-repeat center 0">
 				<div class="container">
 					<div class="home-banner-text ">
 						<?php echo $home_banner_text; ?>
@@ -53,16 +53,16 @@ get_header(); ?>
 					?>
 				</div>
 			</section>
-			<section id="home-contact">
+			<section id="contact">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6">
-							<div class="home-contact-img-box">
+							<div class="contact-img-box">
 								<img src="<?php echo $contact_img["url"]; ?>" alt="<?php echo $contact_img["alt"]; ?>">
 							</div>
 						</div>
 						<div class="col-sm-offset-1 col-sm-5">
-							<div class="home-contact-content-box">
+							<div class="contact-content-box">
 								<?php echo $contact_text; ?>
 							</div>
 						</div>

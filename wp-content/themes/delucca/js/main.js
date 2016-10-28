@@ -65,7 +65,7 @@ $(document).ready(function() {
   	var $obj = $(this);
   	$(window).scroll(function() {
   		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-  		var bgpos = '50% '+ yPos + 'px';
+  		var bgpos = 'center '+ yPos + 'px';
   		$obj.css('background-position', bgpos );
   	}); 
   });

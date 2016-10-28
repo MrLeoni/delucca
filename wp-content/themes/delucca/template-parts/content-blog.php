@@ -63,6 +63,7 @@ if( is_front_page() ) {
 			$blog_query->query( array(
 				"cat"	=>	$cat_post->term_id,
 				"posts_per_page" => $posts_number,
+				"orderby"	=> "modified",
 			));
 			
 			// While loop, for display posts

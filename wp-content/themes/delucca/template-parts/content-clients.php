@@ -4,7 +4,8 @@
  * Template for display "Clientes" section.
  * 
  */
- 
+
+// Querying custom post type in "Cliente Carrossel" taxanomy term
 $clients_args = array(
 	"post_type"	=> "complementos",
 	"posts_per_page" => 99,
@@ -23,7 +24,6 @@ $clients_query = new WP_Query( $clients_args );
 		<div class="col-sm-offset-1 col-sm-10">
 			<div class="client-slider-wrapper">
 				<ul class="client-slider">
-					
 					<?php 
 						while($clients_query->have_posts()): $clients_query->the_post();
 						$client_logo = get_field("client-logo"); ?>
@@ -33,7 +33,6 @@ $clients_query = new WP_Query( $clients_args );
 						<?php endwhile;
 						wp_reset_postdata();
 					?>
-					
 				</ul>
 			</div>
 		</div>
