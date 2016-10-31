@@ -11,13 +11,13 @@ Ambiente de desenvolvimento: Cloud9
 
 
 ## Version: 1.0.0
-## Release: 28/10/2016
+### Release: 28/10/2016
 
 * Tema lançado
 
 
 ## Version: 1.0.1
-## Release: 31/10/2016
+### Release: 31/10/2016
 
 #### Mudanças na versão:
 
