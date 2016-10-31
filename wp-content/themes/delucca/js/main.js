@@ -61,11 +61,12 @@ $(document).ready(function() {
   // Parallax Effect
   --------------------------------*/
   
+  // Parallax Efect
   $('.parallax').each(function(){
   	var $obj = $(this);
   	$(window).scroll(function() {
   		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-  		var bgpos = 'center '+ yPos + 'px';
+  		var bgpos = '50% '+ yPos + 'px';
   		$obj.css('background-position', bgpos );
   	}); 
   });
