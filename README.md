@@ -1,25 +1,34 @@
 # Agência Delucca
-### Tema para WordPress
+Tema em WordPress
 
-Site Portfólio, construído para WordPress.
+Criação: [Agência Delucca](http://www.agenciadelucca.com.br)
 
-Criado por: Leoni Tonet Mella.
-Para: Agência Delucca.
-Cliente Final: Agência Delucca.
-Tema base: Underscores
-Ambiente de desenvolvimento: Cloud9
+Programação: [Leoni Tonet Mella](http://leonimella.com)
+
+Tema Base: [Underscores](http://underscores.me)
+
+<br>
+<br>
+
+## Descrição
+
+Tema Construído para WordPress. Esse tema é um portfólio online para a empresa __Agência Delucca__, Onde ela pode mostrar seus principais trabalhos e informações relevantes para pessoas que estejam interessadas.
+É um tema de administração de conteúdo, portanto mudanças de layout são bem restritas.
+
+<br>
+<br>
+
+## Plugins Necessários:
+##### gratuitos
+
+* [Advanced Custom Field](https://wordpress.org/plugins/advanced-custom-fields/) - Administra campos adicionais para exibição de conteúdo nas páginas e posts.
+* [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) - Responsável pela administração e envio de formulários.
+
+<br>
+<br>
 
 
-## Version: 1.0.0
-### Release: 28/10/2016
+## Versões
 
-* Tema lançado
-
-
-## Version: 1.0.1
-### Release: 31/10/2016
-
-#### Mudanças na versão:
-
-* Alterada _"data-speed"_ do banner no arquivo _"pagina-home.php"_
-* Atualizada a função do efeito _parallax_ em imagens de fundo.
+### 1.0.0 - 01/12/2016
+* Tema lançado!

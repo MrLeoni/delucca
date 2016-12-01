@@ -24,27 +24,23 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	1.0 Menus
 2.0 Accessibility
 3.0 Alignments
-4.0 Clearings
-5.0 Widgets
-6.0 Content
-	6.1 Posts and pages
-	6.2 Comments
-7.0 Infinite scroll
-8.0 Media
-	8.1 Captions
-	8.2 Galleries
+4.0 Content
+	4.1 Posts and pages
+5.0 Media
+	5.1 Captions
+	5.2 Galleries
 
-9.0 Author CSS
-	9.1 Setup
-	9.2 Reusable
-	9.3 General
-	9.4 Header
-	9.5 Home
-	9.6 Blog
-	9.7 Posts
-	9.8 Contact
-	9.9 Footer
-	9.10 Queries
+6.0 Author CSS
+	6.1 Setup
+	6.2 Reusable
+	6.3 General
+	6.4 Header
+	6.5 Home
+	6.6 Blog
+	6.7 Posts
+	6.8 Contact
+	6.9 Footer
+	6.10 Queries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 Navigation
@@ -94,22 +90,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	width: 200px;
 }
 
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-}
-
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
@@ -120,25 +100,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	left: 100%;
 }
 
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a,
-.main-navigation .current-menu-ancestor > a {
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
 }
 
 .site-main .comment-navigation,
@@ -223,51 +188,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*--------------------------------------------------------------
-4.0 Clearings
---------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
-}
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	clear: both;
-}
-
-/*--------------------------------------------------------------
-5.0 Widgets
---------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
-
-/* Make sure select elements fit in widgets. */
-.widget select {
-	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-6.0 Content
+4.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-6.1 Posts and pages
+4.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
@@ -299,51 +223,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*--------------------------------------------------------------
-6.2 Comments
+5.0 Media
 --------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
-}
-
 /*--------------------------------------------------------------
-7.0 Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-8.0 Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-8.1 Captions
+5.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
@@ -365,7 +248,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-8.2 Galleries
+5.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1.5em;
@@ -415,10 +298,10 @@ object {
 }
 
 /*--------------------------------------------------------------
-9.0 Author CSS
+6.0 Author CSS
 --------------------------------------------------------------*/
 /*------------------------------
-9.1 Setup
+6.1 Setup
 ------------------------------*/
 
 body {
@@ -459,7 +342,7 @@ ul {
 }
 
 /*------------------------------
-9.2 Reusable
+6.2 Reusable
 ------------------------------*/
 
 .row {
@@ -523,7 +406,7 @@ ul {
 }
 
 /*------------------------------
-9.3 General
+6.3 General
 ------------------------------*/
 
 #index,
@@ -614,7 +497,7 @@ ul {
 }
 
 /*------------------------------
-9.4 Header
+6.4 Header
 ------------------------------*/
 
 #header {
@@ -769,7 +652,7 @@ ul {
 }
 
 /*------------------------------
-9.5 Home
+6.5 Home
 ------------------------------*/
 
 .home {
@@ -917,7 +800,7 @@ ul {
 }
 
 /*------------------------------
-9.6 Blog
+6.6 Blog
 ------------------------------*/
 
 #blog {
@@ -960,6 +843,10 @@ ul {
 .cat-filter li.active {
 	cursor: pointer;
 	color: #00aeef;
+}
+
+.blog-row {
+	min-height: 390px;
 }
 
 .post-link:link,
@@ -1035,7 +922,7 @@ ul {
 }
 
 /*------------------------------
-9.7 Posts
+6.7 Posts
 ------------------------------*/
 
 #post {
@@ -1066,7 +953,7 @@ img.aligncenter {
 }
 
 /*------------------------------
-9.8 Contact
+6.8 Contact
 ------------------------------*/
 
 .contact-content-box p {
@@ -1126,7 +1013,7 @@ img.aligncenter {
 }
 
 /*------------------------------
-9.9 Footer
+6.9 Footer
 ------------------------------*/
 
 #footer {
@@ -1170,7 +1057,7 @@ img.aligncenter {
 }
 
 /*------------------------------
-9.10 Queries
+6.10 Queries
 ------------------------------*/
 
 @media (max-width: 1200px) {
@@ -1186,6 +1073,13 @@ img.aligncenter {
 }
 
 @media (max-width: 990px) {
+	
+	/* Reusable */
+	
+	.parallax {
+		background-attachment: scroll!important;
+		background-size: cover!important;
+	}
 	
 	/* Home */
 	
@@ -1223,7 +1117,7 @@ img.aligncenter {
 	#post,
 	#single-page,
 	.error-404 {
-		padding: 7% 0 5%;
+		padding: 0 0 5%;
 	}
 	
 	.error-404 .page-title {
@@ -1299,6 +1193,12 @@ img.aligncenter {
 		padding: 5% 15%;
 		margin: 0 auto;
 		float: none;
+	}
+	
+	.home .content-content-box {
+    width: 90%;
+    margin: 0 auto 5%;
+    float: none;
 	}
 	
 	.home-contact-img-box img {

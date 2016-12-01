@@ -64,34 +64,41 @@ $(document).ready(function() {
   // Parallax Efect
   $('.parallax').each(function(){
   	var $obj = $(this);
-  	$(window).scroll(function() {
-  		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-  		var bgpos = '50% '+ yPos + 'px';
-  		$obj.css('background-position', bgpos );
-  	}); 
+  	var windowWidth = $(window).width();
+  	
+  	if(windowWidth < 991) {
+	  	$(window).scroll(function() {
+	  		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+	  		var bgpos = '50% '+ yPos + 'px';
+	  		$obj.css('background-position', bgpos );
+	  	}); 
+  	}
   });
   
   /*--------------------------------
   // Posts filter engine
   --------------------------------*/
-  
   $("li[data-filter]").click(function() {
     // Get value of the clicked li item, and use it to target the posts
-    var itemFilter = $(this).attr("data-filter");
+    var filterClicked = $(this).attr("data-filter");
     
-    // Hide & Show content.
-    $(".post-link").css("opacity", "0");
-    setTimeout(function(){
-      $(".post-wrapper").hide();
-      $(".post-wrapper[data-category='"+itemFilter+"']").show();
-    }, 300);
-    $(".post-wrapper[data-category='"+itemFilter+"'] .post-link").animate({ opacity: 1, }, 500 );
+    // Elements that haven't been clicked
+    var itensExcluded = $(".post-wrapper").not("[data-category='"+filterClicked+"']");
     
+    // Elements that have benn clicked
+    var itemClicked = $(".post-wrapper[data-category='"+filterClicked+"']");
+    
+    // Hiding elements
+  	itensExcluded.hide("fast");
+  	
+  	// Show elements
+  	itemClicked.show("fast");
   });
+  
   // Show all posts
   $(".show-all").click(function() {
-    $(".post-wrapper").show();
-    $(".post-link").animate({ opacity: 1, }, 500 );
+  	// Display all posts
+    $(".post-wrapper").show("fast");
   });
   
   // Change color of the li item on hover and when it is clicked
@@ -106,7 +113,7 @@ $(document).ready(function() {
   toggleFeedbackClass();
   
   /*--------------------------------
-  // Clietes Slider
+  // Clientes Slider
   --------------------------------*/
   
   $(".client-slider").bxSlider({

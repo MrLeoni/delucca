@@ -54,7 +54,7 @@ if( is_front_page() ) {
 	</div>
 </div>
 
-<div class="row">
+<div class="row blog-row">
 	<?php
 		// Second foreach
 		foreach($categories as $cat_post) :

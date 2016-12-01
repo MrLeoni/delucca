@@ -9,12 +9,15 @@
  * License: GPL3
  */
  
- class ReadMeLater{
+ class ReadMeLater {
  	
  	/*
 	 * Action hooks
 	 */
 	public function run() {
+		// Setup filter hook to show Read Me Later link
+		add_filter( 'the_excerpt', array( $this, 'rml_button' ) );
+		add_filter( 'the_content', array( $this, 'rml_button' ) );
 	  // Enqueue plugin styles and scripts
 	  add_action( ‘plugins_loaded’, array( $this, 'enqueue_rml_scripts' ) );
 	  add_action( ‘plugins_loaded’, array( $this, 'enqueue_rml_styles' ) );
@@ -40,6 +43,21 @@
 	 */
 	public function enqueue_rml_styles() {
 		wp_enqueue_style( 'rml-style' );
+	}
+	
+	/**
+	 * Adds a read me later button at the bottom of each post excerpt that allows logged in users to save those posts in their read me later list.
+	 *
+	 * @param string $content
+	 * @returns string
+	 */
+	public function rml_button( $content ) {   
+		// Show read me later link only when the user is logged in
+		if( is_user_logged_in() && get_post_type() == post ) {
+	    $html .= '<a href="#" class="rml_bttn" data-id="' . get_the_id() . '">Read Me Later</a>';
+	    $content .= $html;
+		}
+		return $content;       
 	}
  	
  }
