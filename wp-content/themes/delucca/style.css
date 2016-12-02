@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Agência Delucca
 Author URI: http://www.agenciadelucca.com.br
 Description: Agência de marketing e publicidade em Campinas - SP
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: delucca
@@ -461,7 +461,6 @@ ul {
 }
 
 .client-slider-wrapper .bx-wrapper .bx-viewport {
-	height: 65px!important;
   box-shadow: none;
   border: 5px solid transparent;
   left: -5px;
@@ -659,14 +658,14 @@ ul {
 	background-color: #fff;
 }
 
-.home-banner-text {
-	padding: 6% 0 25%;
-	text-align: center;
-	color: #fff;
+#home-banner {
+	background-size: cover!important;
 }
 
-.home-banner-text.b{
-	padding: 10vh 0 60vh;
+.home-banner-text {
+	padding: 200px 0 400px;
+	text-align: center;
+	color: #fff;
 }
 
 #how-work {
@@ -892,7 +891,7 @@ ul {
 	left: 50%;
 	z-index: 9;
 	-webkit-filter: grayscale(0);
-	        filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .post-thumb-box img {
@@ -918,7 +917,7 @@ ul {
 
 .post-link:hover .post-thumb-box {
 	-webkit-filter: grayscale(1);
-	        filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 /*------------------------------
@@ -931,7 +930,7 @@ ul {
 }
 
 .post-banner {
-	padding: 18% 0 2%;
+	padding: 20% 0 4%;
 }
 
 .post-banner .entry-title {
@@ -1082,6 +1081,10 @@ img.aligncenter {
 	}
 	
 	/* Home */
+	
+	.home-banner-text {
+		padding: 15% 0 45%;
+	}
 	
 	.how-work-box {
 	  width: 150px;

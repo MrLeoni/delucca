@@ -21,7 +21,7 @@ $clients_query = new WP_Query( $clients_args );
 		<div class="col-sm-12">
 			<h2>Clientes</h2>
 		</div>
-		<div class="col-sm-offset-1 col-sm-10">
+		<div class="col-sm-12">
 			<div class="client-slider-wrapper">
 				<ul class="client-slider">
 					<?php 

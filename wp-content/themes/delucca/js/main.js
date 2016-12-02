@@ -61,19 +61,17 @@ $(document).ready(function() {
   // Parallax Effect
   --------------------------------*/
   
-  // Parallax Efect
-  $('.parallax').each(function(){
-  	var $obj = $(this);
-  	var windowWidth = $(window).width();
-  	
-  	if(windowWidth < 991) {
-	  	$(window).scroll(function() {
-	  		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-	  		var bgpos = '50% '+ yPos + 'px';
-	  		$obj.css('background-position', bgpos );
-	  	}); 
-  	}
-  });
+  $.fn.parallax = function(strength) {
+    var scroll_top = $(window).scrollTop();
+    var move_value = Math.round(scroll_top * strength);
+    this.css('background-position', 'center -'+ move_value +'px');
+	};
+	
+	$(window).on('scroll', function() {
+		if($(this).width() > 991) {
+    	$('.parallax').parallax(0.2);
+		}
+	});
   
   /*--------------------------------
   // Posts filter engine
@@ -118,11 +116,11 @@ $(document).ready(function() {
   
   $(".client-slider").bxSlider({
     pager: false,
-    slideWidth: 150,
-    minSlides: 3,
+    slideWidth: 250,
+    minSlides: 2,
     maxSlides: 5,
     moveSlides: 1,
-    slideMargin: 30
+    slideMargin: 50
   });
   
 });

@@ -30,5 +30,14 @@ Tema Construído para WordPress. Esse tema é um portfólio online para a empres
 
 ## Versões
 
+### 1.0.1 - 02/12/2016
+* Ajustes no banner principal, deixando-o maior
+* Logo dos clientes aumentados
+* Melhorada função do efeito "Parallax" no arquivo 'main.js'
+
+<br>
+
 ### 1.0.0 - 01/12/2016
 * Tema lançado!
+
+<br>
