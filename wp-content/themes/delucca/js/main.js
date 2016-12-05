@@ -116,11 +116,11 @@ $(document).ready(function() {
   
   $(".client-slider").bxSlider({
     pager: false,
-    slideWidth: 250,
+    slideWidth: 150,
     minSlides: 2,
     maxSlides: 5,
     moveSlides: 1,
-    slideMargin: 50
+    slideMargin: 30
   });
   
 });

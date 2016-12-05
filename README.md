@@ -30,6 +30,12 @@ Tema Construído para WordPress. Esse tema é um portfólio online para a empres
 
 ## Versões
 
+### 1.0.3 - 05/12/2016
+* Adicionado CSS para melhor usabilidade nos elementos iframe em dispositivos móveis
+
+<br>
+<br>
+
 ### 1.0.2 - 05/12/2016
 * Adicionada margem no topo da primeira imagem do post
 * Adicionada margem na parte de baixo de todas as imagens do post
