@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Agência Delucca
 Author URI: http://www.agenciadelucca.com.br
 Description: Agência de marketing e publicidade em Campinas - SP
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: delucca
@@ -467,6 +467,10 @@ ul {
   background: #fff;
 }
 
+.client-slider-wrapper .bx-wrapper img {
+	max-width: 80%;
+}
+
 .client-slider-wrapper .bx-wrapper .bx-controls-direction a {
 	top: 50%;
 }
@@ -663,7 +667,7 @@ ul {
 }
 
 .home-banner-text {
-	padding: 200px 0 400px;
+	padding: 13% 0 35%;
 	text-align: center;
 	color: #fff;
 }
@@ -936,6 +940,10 @@ ul {
 .post-banner .entry-title {
 	font-weight: 700;
 	color: #fff;
+}
+
+.entry-content img:first-child {
+	margin-top: 30px;
 }
 
 .concept-img-box img {
