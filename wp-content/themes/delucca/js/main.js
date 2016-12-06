@@ -12,40 +12,22 @@ $(document).ready(function() {
     
     // Creating a boolean variable to check if #js-mobile-btn has or not the "active" class
     var btnHasClass = $(this).hasClass("active");
-    // Store .header-wrapper in a variable
-    var nav = $(".header-wrapper");
+    // Store .main-nav in a variable
+    var nav = $(".main-nav");
     
     if (btnHasClass) {
       // If #js-mobile-nav is active, give .header-wrapper a class of "active"
-      nav.addClass("active");
+      nav.slideDown(200, function() {
+      	nav.animate({opacity: "1"}, 200);
+      });
     } else {
       // If is not active, remove "active" class
-      nav.removeClass("active");
-    }
+      nav.animate({opacity: "0"}, 200, function() {
+      	nav.slideUp(200);
+      });
+    } 
     
   });
-  
-  // When we are logged in WordPress Admin area increase "top" property
-  // value of "#js-mobile-btn" to clear the administration menu of WordPress
-  function mobileBtnClear() {
-    // Find WordPress menu
-    var wpMenu = $("body").find("#wpadminbar");
-    
-    // Storage .mobile-btn-box
-    var mobileBtn = $(".mobile-btn-box");
-    
-    if(wpMenu.length > 0) {
-      // If has WordPress menu, change "top" property
-      // of mobileBtn to "61px"
-      mobileBtn.css("top", "61px");
-    } else {
-      // If WordPress menu don't exist set "top" property
-      // to "20px"
-      mobileBtn.css("top", "20px");
-    }
-  }
-  // Call function
-  mobileBtnClear();
   
   /*--------------------------------
   // Footer date
@@ -116,11 +98,14 @@ $(document).ready(function() {
   
   $(".client-slider").bxSlider({
     pager: false,
+    auto: true,
+    pause: 7000,
+    speed: 1500,
     slideWidth: 150,
-    minSlides: 2,
-    maxSlides: 5,
-    moveSlides: 1,
-    slideMargin: 30
+    minSlides: 3,
+    maxSlides: 6,
+    moveSlides: 6,
+    slideMargin: 10
   });
   
 });

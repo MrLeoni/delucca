@@ -45,7 +45,7 @@
 			<div class="header-wrapper">
 				<div class="container clearfix">
 					<div class="logo-box">
-						<a href="<?php echo esc_html(home_url("/")); ?>" title="Home"><img src="<?php bloginfo("stylesheet_directory"); ?>/assets/img/logo/logo-delucca-completo-white.png" alt="Agência Delucca"></a>
+						<a href="<?php echo esc_html(home_url("/")); ?>" title="Home"><img src="<?php bloginfo("stylesheet_directory"); ?>/assets/img/logo/logo-delucca-completo-blue.png" alt="Agência Delucca"></a>
 					</div>
 					<?php
 						// Site main menu 

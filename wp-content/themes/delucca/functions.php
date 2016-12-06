@@ -172,6 +172,7 @@ function categoriaCustomTaxonomy() {
 		"show_ui"	=> true,
 		"show_in_menu"	=> true,
 		"show_tagcloud"	=> false,
+		"show_admin_column" => true,
 		"hierarchical"	=> true,
 		"capabilities"	=> array("manage_terms", "edit_terms", "delete_terms", "assign_terms"),
 	);

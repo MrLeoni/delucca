@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Agência Delucca
 Author URI: http://www.agenciadelucca.com.br
 Description: Agência de marketing e publicidade em Campinas - SP
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: delucca
@@ -309,7 +309,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #222;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -339,6 +339,10 @@ ul li {
 
 ul {
   list-style: none; 
+}
+
+#primary {
+	margin-top: 0;
 }
 
 /*------------------------------
@@ -477,27 +481,27 @@ ul {
 }
 
 .client-slider-wrapper .bx-wrapper .bx-prev {
-	left: -15px;
+	left: -25px;
 	-webkit-filter: grayscale(1);
-	        filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 .client-slider-wrapper .bx-wrapper .bx-prev:hover {
 	background-position: 0 -32px;
 	-webkit-filter: grayscale(0);
-	        filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .client-slider-wrapper .bx-wrapper .bx-next {
 	right: -15px;
 	-webkit-filter: grayscale(1);
-	        filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 .client-slider-wrapper .bx-wrapper .bx-next:hover {
 	background-position: -43px -32px;
 	-webkit-filter: grayscale(0);
-	        filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /*------------------------------
@@ -506,13 +510,13 @@ ul {
 
 #header {
 	overflow: hidden;
+	position: static;
+	z-index: 9999;
 }
 
 .header-wrapper {
 	padding: 1% 0;
-	position: static;
-	z-index: 9999;
-	background-color: #a7a9ac;
+	background-color: #fff;
 }
 
 .logo-box,
@@ -541,6 +545,10 @@ ul {
 	text-align: right;
 }
 
+#menu-main {
+	padding: 0;
+}
+
 .nav-links li {
 	display: inline-block;
 	margin: 0 4% 0 0;
@@ -560,7 +568,7 @@ ul {
 	overflow: hidden;
 	z-index: 9;
 	background-color: transparent;
-	color: #fff;
+	color: #00aeef;
 	text-decoration: none;
 	font-size: 1.1em;
 }
@@ -592,11 +600,11 @@ ul {
 /* Mobile btn */
 
 .mobile-btn-box {
-	display: none;
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	z-index: 99999;
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 99999;
 }
 
 .nav-btn {
@@ -624,7 +632,7 @@ ul {
 	position: relative;
 	top: 0;
 	opacity: 1;
-	background-color: #777;
+	background-color: #00aeef;
 	-webkit-transform: none;
 	transform: none;
 	-webkit-transition: 0.2s;
@@ -633,10 +641,6 @@ ul {
 
 .nav-btn span:last-child {
 	margin: 0 auto;
-}
-
-.nav-btn.active span {
-	background-color: #fff;
 }
 
 .nav-btn.active span:first-child {
@@ -668,7 +672,7 @@ ul {
 }
 
 .home-banner-text {
-	padding: 13% 0 35%;
+	padding: 10% 0 38%;
 	text-align: center;
 	color: #fff;
 }
@@ -1077,6 +1081,10 @@ img.aligncenter {
 	
 	/* Home */
 	
+	#home-banner {
+    background-size: 190%!important;
+	}
+	
 	.how-work-box {
 	  width: 200px;
 	  height: 200px;
@@ -1091,7 +1099,6 @@ img.aligncenter {
 	
 	.parallax {
 		background-attachment: scroll!important;
-		background-size: cover!important;
 	}
 	
 	/* Home */
@@ -1127,6 +1134,12 @@ img.aligncenter {
 
 @media (max-width: 768px) {
 	
+	/* Setup */
+	
+	#primary {
+    margin-top: 40px;
+	}
+	
 	/* General */
 	
 	#index,
@@ -1143,56 +1156,55 @@ img.aligncenter {
 	
 	/* Header */
 	
-	.mobile-btn-box {
-		display: block;
+	#header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
 	}
 	
 	.header-wrapper {
-		width: 100%;
-		padding: 100px 0 0;
-		position: fixed;
-		overflow: auto;
-		top: 0;
-		bottom: 0;
-		left: 100%;
-		opacity: 0;
-		background-color: rgba(0,174,239,0.95);
-		-webkit-transition: 0.3s ease-out;
-		transition: 0.3s ease-out;
+    padding: 15px 0;
 	}
 	
-	.header-wrapper.active {
-		left: 0;
-		opacity: 1;
-		-webkit-transition: 0.3s ease-out;
-		transition: 0.3s ease-out;
-	}
-	
-	.logo-box,
-	.main-nav {
+	.logo-box, .main-nav {
     float: none;
 	}
 	
-	.logo-box {
-    width: 100%;
-    display: block;
-    padding: 0 0 2.5%;
-    border-bottom: 1px dotted #fff;
-    margin: 0 0 2.5%;
+	.logo-box img {
+    width: 160px;
+    padding: 4px 0 0;
 	}
 	
 	.main-nav {
+		display: none;
+		opacity: 0;
     width: 100%;
-    text-align: center;
+    margin: 30px 0 0;
+    text-align: left;
+    border-top: 1px solid #00aeef;
+	}
+	
+	#menu-main {
+		padding: 20px 0 0;
 	}
 	
 	.nav-links li {
     display: block;
-    margin: 0 0 2%;
+    margin: 0 0 4%;
+    text-align: center;
 	}
 	
-	.nav-links a:before {
-		background-color: #222;
+	.nav-links a:link, .nav-links a:visited, .nav-links a:hover, .nav-links a:active {
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 1.3em;
+	}
+	
+	.mobile-btn-box {
+		top: 12px;
+    display: block;
 	}
 	
 	/* Home */
@@ -1258,6 +1270,21 @@ img.aligncenter {
 	
 	body {
 		font-size: 12px;
+	}
+	
+	/* Header */
+	
+	#home-banner {
+    background-size: 350%!important;
+	}
+	
+	.header-wrapper {
+    padding: 10px 0;
+	}
+	
+	.mobile-btn-box {
+    top: 8px;
+    right: 10px;
 	}
 	
 	/* Footer */

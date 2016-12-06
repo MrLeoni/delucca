@@ -26,13 +26,10 @@ $clients_query = new WP_Query( $clients_args );
 				<ul class="client-slider">
 					<?php 
 						while($clients_query->have_posts()): $clients_query->the_post();
-						$client_logo = get_field("client-logo"); 
-						$client_link = get_field("client-link"); ?>
+						$client_logo = get_field("client-logo"); ?>
 							
 							<li>
-								<a href="<?php echo $client_link; ?>" title="<?php echo get_the_title(); ?>" target="_blank" class="clients-link">
-									<img src="<?php echo $client_logo["url"]; ?>" alt="<?php echo $client_logo["alt"]; ?>">
-								</a>
+								<img src="<?php echo $client_logo["url"]; ?>" alt="<?php echo $client_logo["alt"]; ?>">
 							</li>
 							
 						<?php endwhile;
