@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Agência Delucca
 Author URI: http://www.agenciadelucca.com.br
 Description: Agência de marketing e publicidade em Campinas - SP
-Version: 1.0.4
+Version: 1.1.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: delucca
@@ -341,10 +341,6 @@ ul {
   list-style: none; 
 }
 
-#primary {
-	margin-top: 0;
-}
-
 /*------------------------------
 6.2 Reusable
 ------------------------------*/
@@ -452,71 +448,24 @@ ul {
 	font-size: 4em;
 }
 
-/* Clientes */
-
-#clients {
-	padding: 2% 0 5%;
-	background-color: #fff;
-}
-
-#clients h2 {
-	margin: 0 0 4%;
-	text-align: center;
-}
-
-.client-slider-wrapper .bx-wrapper .bx-viewport {
-  box-shadow: none;
-  border: 5px solid transparent;
-  left: -5px;
-  background: #fff;
-  height: 80px!important;
-}
-
-.client-slider-wrapper .bx-wrapper img {
-	max-width: 90%;
-}
-
-.client-slider-wrapper .bx-wrapper .bx-controls-direction a {
-	top: 50%;
-}
-
-.client-slider-wrapper .bx-wrapper .bx-prev {
-	left: -25px;
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
-}
-
-.client-slider-wrapper .bx-wrapper .bx-prev:hover {
-	background-position: 0 -32px;
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-
-.client-slider-wrapper .bx-wrapper .bx-next {
-	right: -15px;
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
-}
-
-.client-slider-wrapper .bx-wrapper .bx-next:hover {
-	background-position: -43px -32px;
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-
 /*------------------------------
 6.4 Header
 ------------------------------*/
 
 #header {
-	overflow: hidden;
-	position: static;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 	z-index: 9999;
 }
 
 .header-wrapper {
 	padding: 1% 0;
-	background-color: #fff;
+	background: #a7a9ac;
+	box-shadow: none;
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
 }
 
 .logo-box,
@@ -568,7 +517,7 @@ ul {
 	overflow: hidden;
 	z-index: 9;
 	background-color: transparent;
-	color: #00aeef;
+	color: #fff;
 	text-decoration: none;
 	font-size: 1.1em;
 }
@@ -632,7 +581,7 @@ ul {
 	position: relative;
 	top: 0;
 	opacity: 1;
-	background-color: #00aeef;
+	background-color: #fff;
 	-webkit-transform: none;
 	transform: none;
 	-webkit-transition: 0.2s;
@@ -796,6 +745,23 @@ ul {
 	font-weight: 300;
 }
 
+.simple-btn:link,
+.simple-btn:visited {
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.simple-btn:hover,
+.simple-btn:active {
+	color: #00aeef;
+	background-color: #fff;
+}
+
 /* Contact */
 
 .home #contact {
@@ -929,6 +895,23 @@ ul {
 	filter: grayscale(1);
 }
 
+.blog-link {
+	margin: 0;
+	text-align: right;
+}
+
+.blog-link a:link,
+.blog-link a:visited {
+	font-size: 1em;
+	color: #00aeef;
+	text-decoration: none;
+}
+
+.blog-link a:hover,
+.blog-link a:active {
+	color: #a7a7a7;
+}
+
 /*------------------------------
 6.7 Posts
 ------------------------------*/
@@ -963,10 +946,69 @@ iframe {
 	margin: 0 auto 25px;
 }
 
+.entry-content img,
 img.aligncenter {
   width: 100%;
   height: auto;
   margin: 0 auto 25px;
+}
+
+/*------------------------------
+6.X About
+------------------------------*/
+
+.infographic-text {
+	display: none;
+}
+
+.about-body {
+	padding: 4% 0;
+}
+
+.infographic-box img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.infographic-box .desktop {
+	display: block;
+}
+
+.infographic-box .mobile {
+	display: none;
+}
+
+.about-content-box {
+	padding: 2% 0;
+}
+
+.about-footer {
+	padding: 8% 0 0;
+	overflow: hidden;
+}
+
+.about-footer-content-box {
+	margin: 35% 0 0;
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.about-footer-content-box .simple-btn {
+	margin: 25px 0 0;
+	font-size: 0.7em;
+}
+
+.about-img-box {
+	display: block;
+	position: relative;
+	top: 10px;
+}
+
+.about-img-box img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /*------------------------------
@@ -1105,12 +1147,25 @@ img.aligncenter {
 	
 	.home-banner-text {
 		padding: 15% 0 45%;
+		color: transparent;
 	}
 	
 	.how-work-box {
 	  width: 150px;
 	  height: 150px;
 	  font-size: 1em;
+	}
+	
+	/* About */
+	
+	.about-footer-content-box {
+    margin: 5% 0;
+    text-align: center;
+	}
+	
+	.about-img-box img {
+		max-width: 60%;
+		margin: 0 auto;
 	}
 	
 	/* Contact */
@@ -1134,12 +1189,6 @@ img.aligncenter {
 
 @media (max-width: 768px) {
 	
-	/* Setup */
-	
-	#primary {
-    margin-top: 40px;
-	}
-	
 	/* General */
 	
 	#index,
@@ -1155,14 +1204,6 @@ img.aligncenter {
 	}
 	
 	/* Header */
-	
-	#header {
-		position: fixed;
-		width: 100%;
-		top: 0;
-		left: 0;
-		box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
-	}
 	
 	.header-wrapper {
     padding: 15px 0;
@@ -1183,7 +1224,7 @@ img.aligncenter {
     width: 100%;
     margin: 30px 0 0;
     text-align: left;
-    border-top: 1px solid #00aeef;
+    border-top: 1px solid #fff;
 	}
 	
 	#menu-main {
@@ -1255,11 +1296,48 @@ img.aligncenter {
 		text-align: center;
 	}
 	
+	.post-link:link,
+	.post-link:visited {
+		margin: 0;
+	}
+	
+	.col-xs-6.col-sm-6.col-md-4.post-wrapper {
+		padding: 0;
+	}
+	
+	.nav-links.blog {
+		margin: 20px 0 0;
+		text-align: center;
+	}
+	
+	.nav-links.blog a:link,
+	.nav-links.blog a:visited {
+		padding: 10px;
+		font-size: 1.1em;
+	}
+	
+	.blog-link {
+    margin: 15px 0 0;
+    text-align: center;
+	}
+	
 	/* Posts */
 	
 	iframe {
     max-width: 100%;
     height: 400px;
+	}
+	
+	/* About */
+	
+	.infographic-box .desktop {
+		display: none;
+	}
+	
+	.infographic-box .mobile {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
 	}
 	
 }
@@ -1276,6 +1354,7 @@ img.aligncenter {
 	
 	#home-banner {
     background-size: 350%!important;
+    background-position: center!important;
 	}
 	
 	.header-wrapper {
@@ -1334,3 +1413,57 @@ img.aligncenter {
 	}
 	
 }
+
+/* Clientes *
+
+#clients {
+	padding: 2% 0 5%;
+	background-color: #fff;
+}
+
+#clients h2 {
+	margin: 0 0 4%;
+	text-align: center;
+}
+
+.client-slider-wrapper .bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: 5px solid transparent;
+  left: -5px;
+  background: #fff;
+  height: 80px!important;
+}
+
+.client-slider-wrapper .bx-wrapper img {
+	max-width: 90%;
+}
+
+.client-slider-wrapper .bx-wrapper .bx-controls-direction a {
+	top: 50%;
+}
+
+.client-slider-wrapper .bx-wrapper .bx-prev {
+	left: -25px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+.client-slider-wrapper .bx-wrapper .bx-prev:hover {
+	background-position: 0 -32px;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.client-slider-wrapper .bx-wrapper .bx-next {
+	right: -15px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+.client-slider-wrapper .bx-wrapper .bx-next:hover {
+	background-position: -43px -32px;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+*/

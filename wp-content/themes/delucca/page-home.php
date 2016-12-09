@@ -24,7 +24,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area home">
 		<main id="main" class="site-main" role="main">
-			<section id="home-banner" class="parallax" data-speed="8" style="background: url(<?php echo $thumb_url[0]; ?>) no-repeat center 0">
+			<section id="home-banner" class="parallax" style="background: url(<?php echo $thumb_url[0]; ?>) no-repeat center 0">
 				<div class="container">
 					<div class="home-banner-text">
 						<?php echo $home_banner_text; ?>
@@ -39,6 +39,9 @@ get_header(); ?>
 			<section id="blog">
 				<div class="container">
 					<?php get_template_part( 'template-parts/content', "blog" ); ?>
+					<div class="blog-link">
+						<a href="<?php echo esc_html(home_url('/nosso-trabalho')); ?>" title="Ver Todos">Veja <b>&plus;</b> trabalhos</a>
+					</div>
 				</div>
 			</section>
 			<section id="home-content" class="clearfix">
@@ -69,9 +72,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+			<?php /*
 			<section id="clients">
 				<?php get_template_part( 'template-parts/content', "clients" ); ?>
 			</section>
+			*/ ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

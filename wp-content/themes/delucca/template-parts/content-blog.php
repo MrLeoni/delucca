@@ -68,7 +68,7 @@ if( is_front_page() ) {
 			// While loop, for display posts
 			while( $blog_query->have_posts() ): $blog_query->the_post(); ?>
 			
-			<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-4 post-wrapper" data-category="<?php echo $cat_post->slug; ?>">
+			<div class="col-xs-6 col-sm-6 col-md-4 post-wrapper" data-category="<?php echo $cat_post->slug; ?>">
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_html(get_the_title()); ?>" class="post-link slide">
 					<div class="post-thumb-box">
 						<?php the_post_thumbnail("full"); ?>

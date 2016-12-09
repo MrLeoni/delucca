@@ -25,9 +25,11 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', "blog" ); ?>
 				</div>
 			</section>
+			<?php /*
 			<section id="clients">
 				<?php get_template_part( 'template-parts/content', "clients" ); ?>
 			</section>
+			*/ ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

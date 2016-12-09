@@ -30,6 +30,13 @@ Tema Construído para WordPress. Esse tema é um portfólio online para a empres
 
 ## Versões
 
+### 1.0.6 - 09/12/2016
+* Vários ajustes menores como: posicionamento de elementos, cor de textos e alinhamento gerais.
+* Adicionada a página "Quem Somos"
+
+<br>
+<br>
+
 ### 1.0.4 - 06/12/2016
 * Modificada a exibição de clientes no slider na home page
 * Menu principal agora é branco e ciano, e em dispositivos móveis agora é fixo
